@@ -76,8 +76,7 @@ async def start(bot, cmd):
 				if user.status == "banned":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="You are Banned😛. Contact my [Support Group](https://t.me/TeleRoid14).",
-						parse_mode="markdown",
+						text="You are Banned😛. Contact my [Support Group](https://t.me/TeleRoid14)",
 						disable_web_page_preview=True
 					)
 					return
@@ -95,20 +94,17 @@ async def start(bot, cmd):
 							]
 						]
 					),
-					parse_mode="markdown"
 				)
 				return
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
 					text="Something went Wrong. Contact my [🛑 Support 🛑](https://t.me/TeleRoid14).",
-					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
 				return
 		await cmd.reply_text(
 			HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
-			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -136,7 +132,6 @@ async def start(bot, cmd):
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
 						text=" You are Banned! Contact [🛑 Support Group 🛑](https://t.me/TeleRoid14).",
-						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
 					return
@@ -155,14 +150,12 @@ async def start(bot, cmd):
 							]
 						]
 					),
-					parse_mode="markdown"
 				)
 				return
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
 					text="Something went Wrong. Contact my [🛑 Support 🛑 ](https://t.me/TeleRoid14).",
-					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
 				return
@@ -185,7 +178,6 @@ async def main(bot, message):
 			share_link = f"https://telegram.dog/{DESTINATION_BOT_USERNAME}?start=TeleRoid14_{file_er_id}"
 			await editable.edit(
 				f"**Your File Stored in the Database & Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
-				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
 					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"), InlineKeyboardButton("🛑 Support 🛑", url="https://t.me/TeleRoid14")]]
 				),
@@ -299,7 +291,6 @@ async def button(bot, cmd: CallbackQuery):
 	if "aboutbot" in cb_data:
 		await cmd.message.edit(
 			ABOUT_BOT_TEXT,
-			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -316,7 +307,6 @@ async def button(bot, cmd: CallbackQuery):
 	elif "aboutdevs" in cb_data:
 		await cmd.message.edit(
 			ABOUT_DEV_TEXT,
-			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -333,7 +323,6 @@ async def button(bot, cmd: CallbackQuery):
 	elif "gotohome" in cb_data:
 		await cmd.message.edit(
 			HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -356,7 +345,6 @@ async def button(bot, cmd: CallbackQuery):
 				if user.status == "kicked":
 					await cmd.message.edit(
 						text="You Are banned. Contact my [Support Group](https://t.me/TeleRoid14).",
-						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
 					return
@@ -373,19 +361,16 @@ async def button(bot, cmd: CallbackQuery):
 							]
 						]
 					),
-					parse_mode="markdown"
 				)
 				return
 			except Exception:
 				await cmd.message.edit(
 					text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
-					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
 				return
 		await cmd.message.edit(
 			text=HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
