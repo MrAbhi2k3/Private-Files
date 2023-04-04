@@ -1,5 +1,5 @@
-# PyroFilesStoreBot
-This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P-Phreak).
+# Files Store Bot
+This is Telegram Parmanent Files Store Bot Saved in MongoDB Database by [@MrAbhi2k3](https://github.com/PredatorHackerzZ).
 
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
@@ -11,13 +11,15 @@ This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P
 - You can also Do Force Sub to a Channel to allow access the Bot.
 
 ### Demo Bot:
-<a href="https://t.me/TeleRoid_FileStore_Bot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
+<a href="https://t.me/TeleRoidFileStoreBot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 ## Configs:
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
 - `API_HASH` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
 - `BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
 - `BOT_USERNAME` - You Bot Username. *(Without [@])*
+- `DESTINATION_BOT_TOKEN` - Get this from [@BotFather](https://t.me/BotFather)
+- `DESTINATION_BOT_USERNAME` - You Bot Username. *(Without [@])*
 - `DB_CHANNEL` - A Telegram Channel ID.
 	- Make a Channel for Storing Files. We will use that as Database. Channel must be Private! Else you will be Copyright by [Telegram DMCA](https://t.me/dmcatelegram)!
 - `BOT_OWNER` - Bot Owner UserID
@@ -30,7 +32,7 @@ This is Telegram Parmanent Files Store Bot by [@TeleRoid14](https://github.com/P
 	- This for some getting user info. If any new User added to DB, Bot will send Log to that Logs Channel. You can use same DB Channel ID.
 
 ### Deploy Now:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/P-Phreak/PyroFilesStoreBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/PyroFilesStoreBot)
 
 ## Commands:
 ```
@@ -44,14 +46,14 @@ broadcast - Broadcast replied message to DB Users
 
 ### Follow on:
 <p align="left">
-<a href="https://github.com/P-Phreak"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
+<a href="https://github.com/PredatorHackerzZ"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
 </p>
 <p align="left">
-<a href="https://twitter.com/PredatorHackerZ"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a>
+<a href="https://twitter.com/MrAbhi2k3"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a>
 </p>
 <p align="left">
 <a href="https://facebook.com/Abhishek.modi.58173000"><img src="https://img.shields.io/badge/Facebook-Follow%20on%20Facebook-blue.svg?logo=facebook"></a>
 </p>
 <p align="left">
-<a href="https://www.instagram.com/aviiiii___"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
+<a href="https://www.instagram.com/MrAbhi_2k3"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
 </p>
