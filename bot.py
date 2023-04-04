@@ -37,15 +37,7 @@ Bot = Client(BOT_USERNAME, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH
 
 async def send_msg(user_id, message):
     try:
-        if message.document:
-            # Check if file size is less than or equal to 4GB
-            if message.document.file_size <= (4 * 1024 * 1024 * 1024):
-                await message.forward(chat_id=user_id)
-            else:
-                # File size greater than 4GB, send as document
-                await Bot.send_document(chat_id=user_id, document=message.document.file_id)
-        else:
-            await message.forward(chat_id=user_id)
+	await message.forward(chat_id=user_id)
         return 200, None
     except FloodWait as e:
         await asyncio.sleep(e.x)
