@@ -32,7 +32,8 @@ HOME_TEXT = Config.HOME_TEXT
 BOT_OWNER = Config.BOT_OWNER
 db = Database(Config.DATABASE_URL, BOT_USERNAME)
 broadcast_ids = {}
-Bot = Client(BOT_USERNAME, DESTINATION_BOT_USERNAME, dest_bot_token=DESTINATION_BOT_TOKEN, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+# Initialize the bot client
+Bot = Client(BOT_USERNAME, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 async def send_msg(user_id, message):
     try:
