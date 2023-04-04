@@ -36,20 +36,21 @@ broadcast_ids = {}
 Bot = Client(BOT_USERNAME, bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
 async def send_msg(user_id, message):
-    try:
-	await message.forward(chat_id=user_id)
-        return 200, None
-    except FloodWait as e:
-        await asyncio.sleep(e.x)
-        return await send_msg(user_id, message)
-    except InputUserDeactivated:
-        return 400, f"{user_id} : deactivated\n"
-    except UserIsBlocked:
-        return 400, f"{user_id} : blocked the bot\n"
-    except PeerIdInvalid:
-        return 400, f"{user_id} : user id invalid\n"
-    except Exception as e:
-        return 500, f"{user_id} : {traceback.format_exc()}\n"
+	try:
+		await message.forward(chat_id=user_id)
+		return 200, None
+	except FloodWait as e:
+		await asyncio.sleep(e.x)
+		return send_msg(user_id, message)
+	except InputUserDeactivated:
+		return 400, f"{user_id} : deactivated\n"
+	except UserIsBlocked:
+		return 400, f"{user_id} : blocked the bot\n"
+	except PeerIdInvalid:
+		return 400, f"{user_id} : user id invalid\n"
+	except Exception as e:
+		return 500, f"{user_id} : {traceback.format_exc()}\n"
+
 
 @Bot.on_message(filters.command("start") & filters.private)
 async def start(bot, cmd):
