@@ -32,7 +32,7 @@ This is Telegram Parmanent Files Store Bot Saved in MongoDB Database by [@MrAbhi
 	- This for some getting user info. If any new User added to DB, Bot will send Log to that Logs Channel. You can use same DB Channel ID.
 
 ### Deploy Now:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/PyroFilesStoreBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrAbhi2k3/Private-Files)
 
 ## Commands:
 ```
