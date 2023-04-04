@@ -108,7 +108,7 @@ async def start(bot, cmd):
 				return
 		await cmd.reply_text(
 			HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
-			parse_mode="Markdown",
+			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -299,7 +299,7 @@ async def button(bot, cmd: CallbackQuery):
 	if "aboutbot" in cb_data:
 		await cmd.message.edit(
 			ABOUT_BOT_TEXT,
-			parse_mode="Markdown",
+			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -316,7 +316,7 @@ async def button(bot, cmd: CallbackQuery):
 	elif "aboutdevs" in cb_data:
 		await cmd.message.edit(
 			ABOUT_DEV_TEXT,
-			parse_mode="Markdown",
+			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -333,7 +333,7 @@ async def button(bot, cmd: CallbackQuery):
 	elif "gotohome" in cb_data:
 		await cmd.message.edit(
 			HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-			parse_mode="Markdown",
+			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
@@ -385,7 +385,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 		await cmd.message.edit(
 			text=HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-			parse_mode="Markdown",
+			parse_mode="html",
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
