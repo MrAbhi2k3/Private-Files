@@ -1,6 +1,2 @@
-pyrogram 
-TgCrypto
-motor
-https://github.com/Tinche/aiofiles/archive/master.zip
-dnspython
-psutil
+telegram==13.9.0
+requests==2.26.0
